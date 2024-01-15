@@ -5,7 +5,7 @@ Usage
 To use the lexer in your Java project, follow these steps:
 
 you have to install jflex on your machine and have in in your environment variable so you can use in it in your cmd.
-after that simply typle jflex on your terminal/cmd and jflex windows will pop out and you can give the code to jflex generator
+after that simply type jflex on your terminal/cmd and jflex windows will pop out and you can give the code to jflex generator
 
 
 Tokens
