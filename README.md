@@ -3,50 +3,10 @@ This project implements a lexer for a simple programming language using JavaCC. 
 
 Usage
 To use the lexer in your Java project, follow these steps:
+you have to install jflex on your machine and have in in your environment variable so you can use in it in your cmd.
+after that simply typle jflex on your terminal/cmd and jflex windows will pop out and you can give the code to jflex generator
 
-Clone the Repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/simple-language-lexer.git
-cd simple-language-lexer
-Include in Your Project:
-
-Copy the Lexer.jj file to your project.
-Make sure you have JavaCC installed. If not, you can download it here.
-Generate Lexer Code:
-Run the following command to generate the lexer code:
-
-bash
-Copy code
-javacc Lexer.jj
-Integrate with Your Code:
-Integrate the generated files with your Java project.
-
-Use the Lexer:
-Create an instance of the lexer and use it to tokenize your input code.
-
-java
-Copy code
-// Example Usage in Java Code
-import java.io.StringReader;
-
-public class Main {
-    public static void main(String[] args) {
-        String inputCode = "class MyClass { int x = 42; }";
-        Lexer lexer = new Lexer(new StringReader(inputCode));
-
-        try {
-            Symbol token;
-            do {
-                token = lexer.next_token();
-                System.out.println(token.toString());
-            } while (token.sym != sym.EOF);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
 Tokens
 class
 int
